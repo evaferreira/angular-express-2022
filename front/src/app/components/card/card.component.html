@@ -1,0 +1,34 @@
+<div class="card">
+    <img class="card-img" src="{{ imagen }}" alt="">
+    <div class="card-info">
+        <div class="card-top">
+            <h2 class="card-info_categoria">{{ categoria | uppercase }}</h2>
+            <h3 class="card-info_titulo">{{ titulo }}</h3>
+
+            <p>{{ contenido }}</p>
+
+            <p class="card-destacado" *ngIf="destacado">
+                Oferta imbatible
+            </p>
+
+            <!--
+
+            <ul>
+                <li *ngFor="let numero of numeros">
+                    Este compartimiento tiene el número: {{ numero }}
+                </li>
+            </ul>
+            
+                Para saber si destacado es falso le agrego un ! al comienzo del condicional
+            <p class="card-destacado" *ngIf="!destacado">
+                NO es una oferta imbatible
+            </p>
+            -->
+        </div>
+
+        <p class="card-info_precio">
+            {{ precio | currency }}<br>
+            Incluye impuestos, tasas y cargos.
+        </p>
+    </div>
+</div>

@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* 
+    Este es mi CSS general
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blanco: #FFF;
+    --negro: #000;
+    --gris: #333;
+    --naranja: #F90;
+    --violeta: purple;
+    --amarillo: yellow;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+img {
+    width: 100%;
+}

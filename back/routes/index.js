@@ -5,7 +5,7 @@ var router = express.Router();
 const api = require('../api');
 
 /* GET home page. */
-router.get('/', async (req, res) => {
+router.get('/libros', async (req, res) => {
   const libros = await api.getBooks();
   res.send(libros);
 });

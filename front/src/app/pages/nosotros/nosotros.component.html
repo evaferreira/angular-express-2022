@@ -7,3 +7,7 @@
 
 <!-- Transformamos a data en un elemento opcional con ? para que mientras cargue la data no se queje -->
 {{ data?.fact }}
+
+<ul *ngFor="let libro of libros">
+    <li>{{ libro.titulo }}</li>
+</ul>

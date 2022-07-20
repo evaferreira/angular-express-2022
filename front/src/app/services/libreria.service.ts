@@ -12,4 +12,9 @@ export class LibreriaService {
   getBooks () {
     return this.http.get('/api/libros');
   }
+
+  findBooks (termino: string) {
+    return this.http.get(`/api/buscar?termino=${termino}`);
+  }
+
 }
